@@ -4,12 +4,26 @@
 
 ### Modular engineering skills for AI coding agents
 
+[![Agent Skills](https://img.shields.io/badge/Agent_Skills-Open_Standard-7C3AED?style=for-the-badge)](https://agentskills.io/specification)
+[![Skill Count](https://img.shields.io/badge/Skills-41-0F766E?style=for-the-badge)](docs/CATALOG.md)
+[![MIT License](https://img.shields.io/badge/License-MIT-2563EB?style=for-the-badge)](LICENSE)
+[![Skillmanual](https://img.shields.io/badge/Docs-SKILLMANUAL-334155?style=for-the-badge)](SKILLMANUAL.md)
+
+[![ChatGPT](https://img.shields.io/badge/ChatGPT-Skills-10A37F?logo=openai&logoColor=white)](docs/INSTALLATION.md#chatgpt)
+[![Claude](https://img.shields.io/badge/Claude-Skills-D97757)](docs/INSTALLATION.md#claudeai-web)
+[![Claude Code](https://img.shields.io/badge/Claude_Code-Agent_Skills-8B5CF6)](docs/INSTALLATION.md#claude-code)
+[![Codex](https://img.shields.io/badge/OpenAI_Codex-Agent_Skills-1E293B?logo=openai&logoColor=white)](docs/INSTALLATION.md#openai-codex-cli-and-ide)
+[![Gemini CLI](https://img.shields.io/badge/Gemini_CLI-Agent_Skills-4285F4)](docs/INSTALLATION.md#google-gemini-cli)
+[![Cursor](https://img.shields.io/badge/Cursor-Agent_Skills-111827)](docs/INSTALLATION.md#cursor)
+[![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-Agent_Skills-181717?logo=github&logoColor=white)](docs/INSTALLATION.md#github-copilot)
+[![OpenCode](https://img.shields.io/badge/OpenCode-Agent_Skills-475569)](docs/INSTALLATION.md#opencode)
+
 **Background Gremlin Group**  
 *Creating Unique Tools for Unique Individuals*
 
 **41 installable skills** · **40 focused specialists** · **1 unified Codemaster**
 
-[Get started](#get-started) · [Skillmanual](SKILLMANUAL.md) · [Skill catalog](docs/CATALOG.md) · [Evaluations](evals/README.md) · [Contribute](docs/CONTRIBUTING.md)
+[Get started](#get-started) · [Skillmanual](SKILLMANUAL.md) · [Install](docs/INSTALLATION.md) · [Skill catalog](docs/CATALOG.md) · [Evaluations](evals/README.md) · [Contribute](docs/CONTRIBUTING.md)
 
 </div>
 
@@ -33,10 +47,25 @@ Skills guide the agent; they do not grant tool permissions, install software, or
 
 ## Get started
 
-1. Download `codemaster.zip` above or a specialty ZIP from [`upload-zips/`](upload-zips/).
-2. In a compatible skill-enabled agent interface, select **Create / Upload** and choose that single ZIP. For local agent runtimes, install the corresponding directory under [`skills/`](skills/) using your host's documented process.
-3. Provide project sources or authorized repository access. The skills do **not** include any individual's credentials, repositories, or local machine configuration.
-4. Ask the agent to activate Codemaster or a specialist, then require an implementation, integration checks and evidence from tests it actually ran.
+> **Coding agent skills, not artifact templates.** In ChatGPT, install them via **Plugins → Skills → Create → Upload from your computer**, **not `@Template Creator`**. The latter creates reusable document, presentation, and similar artifact templates.
+
+1. Download the [Codemaster standalone ZIP](upload-zips/codemaster.zip) to get all 40 specialties inside one master skill, or select one from the [individual skill ZIPs](upload-zips/).
+2. **ChatGPT or Claude web:** Upload one skill ZIP into the host's Skills manager.
+3. **Local coding agent:** Install the **unpacked** `skills/codemaster/` directory into its skill discovery path. Do not install the complete collection ZIP as a single skill.
+4. Activate Codemaster by name and ask for real integration and regression-test evidence.
+
+| Host | Installation method | Full guide |
+|---|---|---|
+| **ChatGPT** | **Plugins → Skills → Create → Upload from your computer** (eligible accounts) | [ChatGPT](docs/INSTALLATION.md#chatgpt) |
+| **Claude.ai** | **Customize → Skills → + → Create skill → Upload a skill** | [Claude web](docs/INSTALLATION.md#claudeai-web) |
+| **Claude Code** | `.claude/skills/` or `~/.claude/skills/` | [Claude Code](docs/INSTALLATION.md#claude-code) |
+| **OpenAI Codex** | `.agents/skills/` or `~/.agents/skills/` | [Codex](docs/INSTALLATION.md#openai-codex-cli-and-ide) |
+| **Gemini CLI** | `.gemini/skills/` or `.agents/skills/` | [Gemini CLI](docs/INSTALLATION.md#google-gemini-cli) |
+| **Cursor** | `.cursor/skills/` or `.agents/skills/` | [Cursor](docs/INSTALLATION.md#cursor) |
+| **GitHub Copilot** | `.github/skills/` or `.agents/skills/` | [Copilot](docs/INSTALLATION.md#github-copilot) |
+| **OpenCode** | `.opencode/skills/` or `.agents/skills/` | [OpenCode](docs/INSTALLATION.md#opencode) |
+
+These badges and guides describe documented installation routes, **not vendor endorsements or proof of model-specific performance**. Refer to the [cross-agent installation guide](docs/INSTALLATION.md) for platform requirements, Windows PowerShell commands, official vendor sources, and troubleshooting.
 
 ```text
 Use Codemaster to inspect this application, preserve every existing feature,
@@ -44,7 +73,7 @@ implement the requested change completely, verify its integration paths,
 and report all tests actually executed and any unverified requirements.
 ```
 
-See the detailed [SKILLMANUAL](SKILLMANUAL.md) for individual installation, project settings, workflow selection, troubleshooting, and maintenance.
+Skills do **not** provide model tools, credentials, unrestricted execution, or free hosted compute. See the [Skillmanual](SKILLMANUAL.md) and [local configuration](docs/CONFIGURATION.md).
 
 ## Inside the collection
 
@@ -89,6 +118,7 @@ Shared requirements have a single canonical source: [`shared/operating-contract.
 | [`upload-zips/`](upload-zips/) | Individual installable skill archives |
 | [`bundles/`](bundles/) | Complete offline distribution |
 | [`SKILLMANUAL.md`](SKILLMANUAL.md) | Full user and maintainer manual |
+| [`docs/INSTALLATION.md`](docs/INSTALLATION.md) | Cross-agent installation, invocation, and vendor documentation |
 | [`evals/`](evals/) | Reproducible task fixtures, agent-result scorer, evaluation methodology |
 | [`shared/`](shared/) | Single source of truth for the mandatory operating contract |
 | [`tools/`](tools/) | Local rebuild, audit, ZIP validation and routing checks |
