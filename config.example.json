@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "repositories": [],
+  "intro_montage": {
+    "enabled": false,
+    "repository_url": null,
+    "asset_path": null,
+    "local_file": null
+  },
+  "github": {
+    "only_when_requested": true,
+    "allow_metered_operations": false
+  }
+}

@@ -1,0 +1,15 @@
+# Per-user / per-project configuration; never publish private settings
+.codeman/config.json
+**/.codeman/config.json
+config.local.json
+**/config.local.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+__pycache__/
+.pytest_cache/
+*.pyc
