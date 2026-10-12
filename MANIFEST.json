@@ -13,16 +13,16 @@
       "sha256": "1538f4302be0ee6b6825356d0fef2f394b31167c0258d13bdd3df60a184038cf"
     },
     "SKILLMANUAL.md": {
-      "bytes": 11201,
-      "sha256": "a7a4b8cca43402deca52f09bf8cdbc6d4cee704021ab18ca403f5cba95d7ba41"
+      "bytes": 11225,
+      "sha256": "db6c01ee37f1fdb18fca212511a2378481f60755ce832b8108987e1291556cbe"
     },
     "bundles/README.md": {
       "bytes": 683,
       "sha256": "74e91eaa9845a66c71c3830a8765bcf87aa1afdf89ee5a504739109f5e435d55"
     },
     "bundles/skillman-all-public-skills.zip": {
-      "bytes": 1514145,
-      "sha256": "8c664f0988fe398aa975c754a67420057c0bfeda8d87713daa90c0999c26d398"
+      "bytes": 1514128,
+      "sha256": "d9be79857e96de4268433e8834612d863e1025e0881bd1286e3a9ee422d8ebad"
     },
     "config.example.json": {
       "bytes": 261,
@@ -60,14 +60,6 @@
       "bytes": 3904,
       "sha256": "368a6664a72a5a9b3ab165a8c4da8404b8c8f93f8769ce9ed02f89675fb27aa4"
     },
-    "evals/__pycache__/run.cpython-313.pyc": {
-      "bytes": 8302,
-      "sha256": "41968ece463b3a96cfb545722cbf6b674a538fe2fb38d3c8f08823772deea542"
-    },
-    "evals/__pycache__/test_evals.cpython-313.pyc": {
-      "bytes": 4441,
-      "sha256": "d5ef1785d87cb500d02b2e8a2dad1481bc946962d3aa57a8e8bf2c5cd8b85470"
-    },
     "evals/run.py": {
       "bytes": 4231,
       "sha256": "7e5aa5d7a6daa53a4d396c462dd64c736f28c9993306f9f0de04c7c94e12160a"
@@ -75,10 +67,6 @@
     "evals/tasks/api-integration/TASK.md": {
       "bytes": 334,
       "sha256": "af3e7d7194da22d92906378a76e057b75fa90cf3eb73513e133743d04a652510"
-    },
-    "evals/tasks/api-integration/tests/__pycache__/test_solution.cpython-313.pyc": {
-      "bytes": 2809,
-      "sha256": "61aa72875add602413d69334c9d3a933408da4a8cbd802bccc93b12e56b24040"
     },
     "evals/tasks/api-integration/tests/test_solution.py": {
       "bytes": 1031,
@@ -100,10 +88,6 @@
       "bytes": 415,
       "sha256": "d5df57299a890ad7b0d742ea0615b3400015c50d8686591fd58d7dff2bdadb3d"
     },
-    "evals/tasks/feature-preservation/tests/__pycache__/test_solution.cpython-313.pyc": {
-      "bytes": 2616,
-      "sha256": "ec85fbcc68705c52454886dbac09d08e8341f035ff1193a38743e5da45f5663b"
-    },
     "evals/tasks/feature-preservation/tests/test_solution.py": {
       "bytes": 872,
       "sha256": "648ad10f83a9e8b0d02eb3293200b2a66bfe9420b52f36de19c425de80194b27"
@@ -116,10 +100,6 @@
       "bytes": 387,
       "sha256": "aa355539c003b6c3ad85fac60c0639be323cb218b980ee6a0d61b0a6f0640999"
     },
-    "evals/tasks/performance-preservation/tests/__pycache__/test_solution.cpython-313.pyc": {
-      "bytes": 3089,
-      "sha256": "2c975d53c6e34bf18a70520627a41c5f77349a30e4cced9670e9694ac8c5649d"
-    },
     "evals/tasks/performance-preservation/tests/test_solution.py": {
       "bytes": 981,
       "sha256": "1a582be30321b44acb3691c26e0cb983fcbd091add1b05f80b47229a2cee24d7"
@@ -131,10 +111,6 @@
     "evals/tasks/untrusted-input/TASK.md": {
       "bytes": 379,
       "sha256": "8e1257c7e1df2b535500ab34d17b9f2aa3a93b64b05cdf26c193b6a3afe8b5e0"
-    },
-    "evals/tasks/untrusted-input/tests/__pycache__/test_solution.cpython-313.pyc": {
-      "bytes": 2621,
-      "sha256": "c4b9544ef0920c2e70a1fc624310e77d36f413be5d738c32ccf61188275668fe"
     },
     "evals/tasks/untrusted-input/tests/test_solution.py": {
       "bytes": 905,
