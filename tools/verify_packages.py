@@ -35,6 +35,8 @@ def main()->None:
             assert set(names)==set(files),(package,'paths mismatch')
             for n,b in files.items(): assert z.read(n)==b,(package,n)
     assert len(contracts)==1,'Contracts differ across packages'
+    assert next(iter(contracts))==(ROOT/'shared/operating-contract.md').read_bytes(), 'Canonical operating contract differs'
+    assert (ROOT/'LICENSE').is_file() and 'MIT License' in (ROOT/'LICENSE').read_text('utf8'), 'MIT license missing'
     master=ROOT/'skills'/'codemaster'/'references'/'modules'
     standalone={p.name:p for p in dirs if p.name!='codemaster'}
     assert len(standalone)==40
@@ -64,6 +66,11 @@ def main()->None:
         assert hashlib.sha256(f.read_bytes()).hexdigest()==info['sha256'],f
     expected=''.join(f"{data['sha256']}  {path}\n" for path,data in sorted(manifest['files'].items()))
     assert (ROOT/'SHA256SUMS').read_text('utf8')==expected
-    print('Integrity + consistency: PASS; 41 public skill sources, 41 ZIPs, 40 embedded codemaster specialty snapshots, 1 bundle')
+    route=json.loads((ROOT/'skills/codemaster/references/module-routing.json').read_text('utf8'))
+    assert len(route['modules'])==40
+    assert {x['name'] for x in route['modules']}==set(standalone), 'Codemaster routing coverage differs'
+    for extra in ('skillman/LICENSE','skillman/README.md','skillman/SKILLMANUAL.md','skillman/evals/README.md'):
+        assert extra in members, f'Bundle missing {extra}'
+    print('Integrity + consistency: PASS; MIT license, shared contract, 40-module routing, 41 source skills and ZIPs, codemaster snapshots, evaluation fixtures, 1 bundle')
 
 if __name__=='__main__':main()

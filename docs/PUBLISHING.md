@@ -9,3 +9,7 @@ This repository distribution is generated offline and can be reviewed before pub
 5. Review the staged changes, confirm no original user content was included, and commit/push only once the remote's non-metered behavior is established.
 
 A publication does not confer a software license. Select a license appropriate for public reuse before inviting third-party redistribution.
+
+## Legal and evaluation gate
+
+The repository uses [MIT License](../LICENSE). Retain its copyright and permission notice. Before publishing, run the evaluation fixture self-tests and acknowledge that these are **not** paired agent performance measurements. For an actual versioned GitHub Release, follow [RELEASING.md](RELEASING.md). The repository currently restricts PR creation to collaborators.
