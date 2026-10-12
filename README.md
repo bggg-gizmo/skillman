@@ -2,16 +2,16 @@
 
 **Background Gremlin Group — Creating Unique Tools for Unique Individuals**
 
-[Skillmanual](SKILLMANUAL.md) · [Codemaster](skills/codemaster/) · [Complete Public Bundle](bundles/skillman-all-public-skills.zip)
+[Skillmanual](SKILLMANUAL.md) · [Codemaster](skills/codemaster/) · [Complete public bundle](bundles/skillman-all-public-skills.zip)
 
-**41 public, independently packaged skills: 40 Codeman specialties plus one self-contained Codemaster**, prepared for public use. This repository contains the complete editable `SKILL.md` source for each skill, plus individually packaged ZIP archives for import into compatible agent interfaces.
+**40 independent coding, software engineering, cybersecurity, and operational skills**, prepared for public use. This repository contains the complete editable `SKILL.md` source for each skill, plus individually packaged ZIP archives for import into compatible agent interfaces.
 
 These are reusable **agent skills**, not preinstalled software or autonomous access grants. They guide an agent's workflow when activated and when the relevant files, tools, and permissions are available.
 
 ## Quick start
 
-1. Read the [Skillmanual](SKILLMANUAL.md) and browse the [catalog](docs/CATALOG.md). Install [Codemaster](upload-zips/codemaster.zip) for one all-in-one skill, or choose any specialty.
-2. Download an individual skill ZIP from [`upload-zips/`](upload-zips/) or [the entire public bundle](bundles/skillman-all-public-skills.zip). **Do not upload the entire bundle as a single skill.**
+1. Read the [Skillmanual](SKILLMANUAL.md) and browse the [40-skill catalog](docs/CATALOG.md). Install [Codemaster](upload-zips/codemaster.zip) for one bundled master skill, or select individual specialties.
+2. Download the chosen standalone ZIP from [`upload-zips/`](upload-zips/), or the [complete offline bundle](bundles/skillman-all-public-skills.zip) to obtain every ZIP at once. Do **not** upload the complete bundle as a single skill.
 3. In a compatible ChatGPT Skills interface, use the available **Create / Upload** option to install one ZIP per skill. The exact UI and availability depend on the client and account.
 4. For other compatible local agent environments, follow that agent's documented skill directory/import mechanism and use the unzipped directory under [`skills/`](skills/). A skill does not automatically install compilers, security tools, or connectors.
 5. Invoke the skill by name or describe a task matching its activation description. For example: **"Use Codeman Guardian and Codeman Tester to inventory the existing behavior, implement this change completely, and verify no regressions."**
@@ -26,7 +26,7 @@ These are reusable **agent skills**, not preinstalled software or autonomous acc
 | Platforms and operations | Web, Ops, Desktop, Database, API, UI/UX, Performance, Dependencies, Observability, Migration, Automation |
 | Repository and knowledge | GitHub, Knowledge, Research |
 
-The [catalog](docs/CATALOG.md) lists the **40 standalone specialties**. **Codemaster** is a separate skill that embeds all 40 complete public specialty reference packages and can be installed on its own.
+The [catalog](docs/CATALOG.md) lists and links **all 40** specialties. The additional **Codemaster** skill bundles their complete instructions and references as 40 `module-guide.md` documents in one independently installable ZIP, with exactly one `SKILL.md` entry point. See the [manual](SKILLMANUAL.md).
 
 ## Complete implementation and preservation requirements
 
@@ -49,11 +49,7 @@ See [configuration details](docs/CONFIGURATION.md). A project-specific configura
 
 ## Repository layout
 
-- [`skills/codemaster/`](skills/codemaster/) — the complete master skill and its references to all 40 specialties
-- [`upload-zips/codemaster.zip`](upload-zips/codemaster.zip) — one standalone installable master skill
-- [`bundles/`](bundles/) — public all-skills bundle plus bundle README
-- [`SKILLMANUAL.md`](SKILLMANUAL.md) — complete operator, configuration and maintenance guide
-- Every specialist directory in [`skills/`](skills/) contains its own README.
+The [`skills/codemaster/`](skills/codemaster/) directory is the master package. Its [`codemaster.zip`](upload-zips/codemaster.zip) contains the full reference snapshots for all 40 specialists. The [`bundles/`](bundles/) folder contains a complete offline ZIP of all public sources and individual packages. Every skill folder includes its own README.
 
 Every skill includes complete instructions and all its references. The source and installable ZIP of each skill are available directly from this repository.
 
@@ -100,6 +96,8 @@ Every skill includes complete instructions and all its references. The source an
 | [`skills/codeman-ui-ux/`](skills/codeman-ui-ux/) | [`codeman-ui-ux.zip`](upload-zips/codeman-ui-ux.zip) |
 | [`skills/codeman-web/`](skills/codeman-web/) | [`codeman-web.zip`](upload-zips/codeman-web.zip) |
 
+The [Skillmanual](SKILLMANUAL.md) explains installation, all-module routing, local configuration, testing, contribution, and publication.
+
 Other repository files: [`config.example.json`](config.example.json), [`docs/CONFIGURATION.md`](docs/CONFIGURATION.md), [`docs/SECURITY.md`](docs/SECURITY.md), [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md), [`docs/CATALOG.md`](docs/CATALOG.md), [`tools/build_packages.py`](tools/build_packages.py), [`tools/audit_distribution.py`](tools/audit_distribution.py), [`tools/verify_packages.py`](tools/verify_packages.py), [`MANIFEST.json`](MANIFEST.json), and [`SHA256SUMS`](SHA256SUMS).
 
 ## Verify or rebuild locally
@@ -112,7 +110,7 @@ python tools/audit_distribution.py
 python tools/verify_packages.py
 ```
 
-`build_packages.py` creates deterministic standalone archives and a complete public bundle from the source under `skills/` and regenerates the integrity manifest. The audit checks files and ZIP members for known personal/account identifiers and credentials. The verification checks names, references, ZIP integrity, deterministic source-to-archive equivalence, and SHA-256 digests. Do not interpret passing these checks as proof of security, runtime functionality, or flawless future application modifications.
+`build_packages.py` creates deterministic standalone archives plus the complete public bundle from the source under `skills/` and regenerates the integrity manifest. The audit checks files and ZIP members for known personal/account identifiers and credentials. The verification checks names, references, ZIP integrity, deterministic source-to-archive equivalence, and SHA-256 digests. Do not interpret passing these checks as proof of security, runtime functionality, or flawless future application modifications.
 
 ## Maintenance and use
 

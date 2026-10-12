@@ -15,3 +15,7 @@ Invoke **Codemaster** for a multi-specialty coding, security, operations, or int
 - [`references/modules/`](references/modules/) — complete standalone source of all 40 skills, including their original reference files
 
 See [Skillmanual](../../SKILLMANUAL.md) for verification and installation. Do not commit personal project configuration or machine paths.
+
+## Upload validation
+
+This master skill contains exactly one `SKILL.md` (at the root). Its 40 bundled specialties are retained as `references/modules/<module>/module-guide.md` alongside their unmodified supporting references. Use `upload-zips/codemaster.zip` to install; do not upload the collection bundle as a single skill.

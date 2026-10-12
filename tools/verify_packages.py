@@ -30,7 +30,7 @@ def main()->None:
             assert z.testzip() is None,package
             names=z.namelist()
             assert f'{folder.name}/SKILL.md' in names,package
-            assert len([x for x in names if x.count('/')==1 and x.endswith('/SKILL.md')])==1,package
+            assert [x for x in names if x.endswith('/SKILL.md')]==[f'{folder.name}/SKILL.md'],package
             files={p.relative_to(ROOT/'skills').as_posix():p.read_bytes() for p in folder.rglob('*') if p.is_file()}
             assert set(names)==set(files),(package,'paths mismatch')
             for n,b in files.items(): assert z.read(n)==b,(package,n)
@@ -42,7 +42,8 @@ def main()->None:
         original={p.relative_to(folder):p.read_bytes() for p in folder.rglob('*') if p.is_file()}
         snapshot=master/skill_name
         copied={p.relative_to(snapshot):p.read_bytes() for p in snapshot.rglob('*') if p.is_file()}
-        assert original==copied, f'Codemaster embedded {skill_name} differs from public original'
+        normalized={Path('module-guide.md') if str(k)=='SKILL.md' else k:v for k,v in original.items()}
+        assert normalized==copied, f'Codemaster embedded {skill_name} differs from public original (except entry-point filename)'
     bundle=ROOT/'bundles'/'skillman-all-public-skills.zip'
     with zipfile.ZipFile(bundle) as zipped:
         assert zipped.testzip() is None
@@ -50,7 +51,11 @@ def main()->None:
         assert 'skillman/SKILLMANUAL.md' in members
         for folder in dirs:
             assert 'skillman/skills/'+folder.name+'/SKILL.md' in members
-            assert 'skillman/upload-zips/'+folder.name+'.zip' in members
+            archived_zip='skillman/upload-zips/'+folder.name+'.zip'
+            assert archived_zip in members
+            assert zipped.read(archived_zip)==(ROOT/'upload-zips'/(folder.name+'.zip')).read_bytes(), f'Bundle contains a stale standalone ZIP: {folder.name}'
+            assert len([x for x in members if x.startswith('skillman/skills/'+folder.name+'/') and x.endswith('/SKILL.md')])==1
+    assert len([p for p in master.rglob('SKILL.md')])==0
     assert b'For any application or programming startup montage' in next(iter(contracts))
     for path,info in manifest['files'].items():
         f=ROOT/path

@@ -11,6 +11,9 @@ BUNDLES=ROOT/'bundles'
 FIXED_DATE=(2020,1,1,0,0,0)
 
 def pack_one(skill_dir:Path, archive:Path)->None:
+    skill_entries=[f for f in skill_dir.rglob('SKILL.md') if f.is_file()]
+    if skill_entries != [skill_dir/'SKILL.md']:
+        raise SystemExit(f'Skill archive must contain exactly one root SKILL.md: {skill_dir}: {skill_entries}')
     with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as output:
         for file in sorted(skill_dir.rglob('*')):
             if not file.is_file(): continue

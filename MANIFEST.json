@@ -5,20 +5,20 @@
       "sha256": "a2366d92140fac8b8e20506bc6e92e70ed6559a2dd0b9bfeecaa4a6512c52881"
     },
     "README.md": {
-      "bytes": 11797,
-      "sha256": "adf2b58a69881f69fcf4f0e9beddf1ce97207db350cdda26852bb8a25e06e1db"
+      "bytes": 11963,
+      "sha256": "ec9021ec6658bf00edad20d2f7ecff88d50c3272f0f6407c6a1ba3fa8946069d"
     },
     "SKILLMANUAL.md": {
-      "bytes": 10189,
-      "sha256": "776c0910a7fb2ed97a8b94280a49307e1d0b8e546bad058994260b4108403084"
+      "bytes": 10260,
+      "sha256": "0a63682d59b5da1baa3368558eae5216ff2675e8f12ac2c2a5490a418a722f23"
     },
     "bundles/README.md": {
       "bytes": 683,
       "sha256": "74e91eaa9845a66c71c3830a8765bcf87aa1afdf89ee5a504739109f5e435d55"
     },
     "bundles/skillman-all-public-skills.zip": {
-      "bytes": 1488466,
-      "sha256": "076e3eb87130339ef8cd976223f27546fa588aeb45f73da6d8f80dbcdf1d34fc"
+      "bytes": 1489674,
+      "sha256": "a13040140873d055d2c9c3d22dd0130f3e12d0ba89a23c28544f10a000fd6c6d"
     },
     "config.example.json": {
       "bytes": 261,
@@ -961,26 +961,26 @@
       "sha256": "fe5d98c7565e5e2bc92049d0aaf0ecc9f44d0fdfa041cdd5b3a1d04986c49f98"
     },
     "skills/codemaster/README.md": {
-      "bytes": 1374,
-      "sha256": "fda9a43e3c2e46481fa74453b0d057dcee988f2ede5b80495ad3827326056f54"
+      "bytes": 1701,
+      "sha256": "a6dcef39a0b94a550e0b37be630d48bb4f14ba5a1e447c4fd7d20ce43502e7a2"
     },
     "skills/codemaster/SKILL.md": {
-      "bytes": 3996,
-      "sha256": "66e10bfa38adfc6c68244cfcd65f09fcfb7a952dd5aec6edc66ca5db67a185a3"
+      "bytes": 4003,
+      "sha256": "bc6c3fed680e8688c7f92b2a9996365a692df3c4420a2782b015539e57fd047b"
     },
     "skills/codemaster/references/local-configuration.md": {
       "bytes": 2774,
       "sha256": "37027f2d3eb43d8febd4b68cb61ce1b5bc457e605e4b74a0e1fcdde4cd727246"
     },
     "skills/codemaster/references/module-index.md": {
-      "bytes": 5029,
-      "sha256": "f19f74e362f604ddc84bafb940d2a9974117402b885f354e1c992d20e8c85777"
+      "bytes": 5316,
+      "sha256": "6cc74f5c771465eb0240c4496d882cf2660bdad0429ef83a392a9c6b50a28ca1"
     },
     "skills/codemaster/references/modules/codeman-api/README.md": {
       "bytes": 1734,
       "sha256": "6d560196a1b5c0eaea6d68581ebc2eb805119e863e43b63e6828d3cdf8703360"
     },
-    "skills/codemaster/references/modules/codeman-api/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-api/module-guide.md": {
       "bytes": 4850,
       "sha256": "935e29a1c2ef0beed4c97a70750477cc785adb975403af2d6549a8217125fc28"
     },
@@ -1004,7 +1004,7 @@
       "bytes": 1787,
       "sha256": "cfbd2bf18b0ac94cbe96b6541f59fa794bf40e34977328516e06225ddb3e7f46"
     },
-    "skills/codemaster/references/modules/codeman-architect/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-architect/module-guide.md": {
       "bytes": 4990,
       "sha256": "c28785409899e02325f3d939284425e07f0f5d4c1e6c9c2d43add293d76b3999"
     },
@@ -1028,7 +1028,7 @@
       "bytes": 1757,
       "sha256": "a7715b5f220bd4bc7242c079e23eb6941df7d6ecf1a542752eb6702f8176aa62"
     },
-    "skills/codemaster/references/modules/codeman-auditor/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-auditor/module-guide.md": {
       "bytes": 4906,
       "sha256": "5934d0c48bb93888b0363e82d35933f0764b63b3ee9fd5b8310daedb1b337e95"
     },
@@ -1052,7 +1052,7 @@
       "bytes": 1766,
       "sha256": "f90bcb1423dadea0fd4b1249d4e9dab0f63245c8634c8b93a033dae5fe1157d6"
     },
-    "skills/codemaster/references/modules/codeman-automation/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-automation/module-guide.md": {
       "bytes": 4829,
       "sha256": "2ad47c42f036a4b01d91ebbdd78554de325f613f6b01dc7ab98b4dc89b350e9a"
     },
@@ -1076,7 +1076,7 @@
       "bytes": 1571,
       "sha256": "605de921878c3bfa32c043424988bf6af9a5b2265a7ed8d8227c9af11d5740b5"
     },
-    "skills/codemaster/references/modules/codeman-blue/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-blue/module-guide.md": {
       "bytes": 3565,
       "sha256": "4b1c558574487944a500e8426e6579458d609b52985565a9c9dc16a9cbbf05cc"
     },
@@ -1096,7 +1096,7 @@
       "bytes": 1762,
       "sha256": "19c50232135c90db1c569bb009eb687c8a82d0efff5803719981f5aaa8c67a35"
     },
-    "skills/codemaster/references/modules/codeman-build-doctor/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-build-doctor/module-guide.md": {
       "bytes": 4907,
       "sha256": "e666ac9f894360a82913eccae639427b245d94886890a292d432d7608e1eb6b2"
     },
@@ -1120,7 +1120,7 @@
       "bytes": 1584,
       "sha256": "95d3cb8b0a49f02535572a8a42fd4b6f4c2cfb63c2ae24e565da035a5a6616f4"
     },
-    "skills/codemaster/references/modules/codeman-coder/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-coder/module-guide.md": {
       "bytes": 3568,
       "sha256": "a8e8fae2c279891ea28bbeaf4ba9de007910941a9195d39d7e894b2e914358e7"
     },
@@ -1140,7 +1140,7 @@
       "bytes": 1757,
       "sha256": "a976d6638f2c3d6f4d3550f833ebf08ea0b89bb7648037c75eae12a794ca5e6f"
     },
-    "skills/codemaster/references/modules/codeman-contracts/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-contracts/module-guide.md": {
       "bytes": 4872,
       "sha256": "504a2afcc564884489fadce252ccf6d4a0ddf5b44c5020b4be4d5032d2608a20"
     },
@@ -1164,7 +1164,7 @@
       "bytes": 1614,
       "sha256": "a00182087ebdb16d4fa44c0347e91275730327879d300551edd851b94d64abb5"
     },
-    "skills/codemaster/references/modules/codeman-core/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-core/module-guide.md": {
       "bytes": 3579,
       "sha256": "eaed78cc679a162c5f761617e24d17eb1ec1025a98dc35d292775d5b88f26425"
     },
@@ -1184,7 +1184,7 @@
       "bytes": 1764,
       "sha256": "3138ca011879d77a51336657e2c5540b1040e64859c1283d35f9dcf4e552d6b9"
     },
-    "skills/codemaster/references/modules/codeman-database/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-database/module-guide.md": {
       "bytes": 4900,
       "sha256": "cfa44fcb473c4c39583d82198ce8bc8b6b52471ad1196859f4c3986f343c0822"
     },
@@ -1208,7 +1208,7 @@
       "bytes": 1771,
       "sha256": "a2700fd951f7bcd1bcfd6abf62c0eb18b2c2382199b3b91e4017ef07194ff5b3"
     },
-    "skills/codemaster/references/modules/codeman-dependencies/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-dependencies/module-guide.md": {
       "bytes": 4881,
       "sha256": "fc8718e42d06493badbe5c4c7956d703c6200f9c87d6c3da31c5eb565c8ec9ea"
     },
@@ -1232,7 +1232,7 @@
       "bytes": 1763,
       "sha256": "832bcfcba838f73310588f521652be4b0e2c519b1bcc7c92e3474eb926650d4d"
     },
-    "skills/codemaster/references/modules/codeman-desktop/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-desktop/module-guide.md": {
       "bytes": 4916,
       "sha256": "354361f0bd4c3f1975b6457d06dc549e23cb26ee917910a5e06efffe9803d98a"
     },
@@ -1256,7 +1256,7 @@
       "bytes": 1745,
       "sha256": "3a96e896a9848e1a51a342bd76dd92aa483396fddb4c8027b16e22471cd648c3"
     },
-    "skills/codemaster/references/modules/codeman-detection-lab/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-detection-lab/module-guide.md": {
       "bytes": 4785,
       "sha256": "3993576f8c709ae9980428576754ea6906fb8d12120525696239a8973ee8e244"
     },
@@ -1280,7 +1280,7 @@
       "bytes": 1765,
       "sha256": "a86b9d127cffcdddd1c628ee39413dd2f7634a36a06173db2d5893305fadf4e9"
     },
-    "skills/codemaster/references/modules/codeman-documentation/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-documentation/module-guide.md": {
       "bytes": 4844,
       "sha256": "2738c14e76e493fb3172ab9c0791a0c54ef54e2f37ca11975541ea0b673cf271"
     },
@@ -1304,7 +1304,7 @@
       "bytes": 1750,
       "sha256": "1fbb8a68809ee41385b19f29a77ee52b1311cb57baa008204b31409949ad081f"
     },
-    "skills/codemaster/references/modules/codeman-forensics/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-forensics/module-guide.md": {
       "bytes": 4783,
       "sha256": "4f4c7a358609cb5112599144565e6b12d439c91c9efc3620f21323db510195cc"
     },
@@ -1328,7 +1328,7 @@
       "bytes": 1756,
       "sha256": "6823b3abd27e8412d2acd38980c96a8b1910b7d15a253824f32d57267bea4a59"
     },
-    "skills/codemaster/references/modules/codeman-fuzz-lab/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-fuzz-lab/module-guide.md": {
       "bytes": 4860,
       "sha256": "fbf1a1823df1b2fdb77da344d1b36d9e9c92ac7dde83cd56fe9069225348622c"
     },
@@ -1352,7 +1352,7 @@
       "bytes": 1769,
       "sha256": "2af1c32a92e1e995f21e0c311188dd27efe79f809a046cadf09074cfc4b64756"
     },
-    "skills/codemaster/references/modules/codeman-github/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-github/module-guide.md": {
       "bytes": 4862,
       "sha256": "423e8251d4186b01f46fa81c3d060c8111b459b5c4cb15a286b85feb05a52007"
     },
@@ -1376,7 +1376,7 @@
       "bytes": 1767,
       "sha256": "b42b8121e9c111d2b411d5950ce963bc611d1031cadc9216b319627f47026b05"
     },
-    "skills/codemaster/references/modules/codeman-guardian/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-guardian/module-guide.md": {
       "bytes": 4880,
       "sha256": "6c31da0147f6718bc69aafb32e00fc21ab950d22936ac91ea6b567bc577ebd19"
     },
@@ -1400,7 +1400,7 @@
       "bytes": 1766,
       "sha256": "cb915d9d0b3323cc8a9e1cf42a8b2aa35009f361dd9dffe8487539bb4123c70d"
     },
-    "skills/codemaster/references/modules/codeman-integrator/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-integrator/module-guide.md": {
       "bytes": 4884,
       "sha256": "51e95bd23861060d6ce2f8760355a58c9c33940a714592aac98e4ff22b48cf3d"
     },
@@ -1424,7 +1424,7 @@
       "bytes": 1768,
       "sha256": "edf87f2d70407c3057949456b09b7812f6601bbbf490b135e3175a2c60c9dca3"
     },
-    "skills/codemaster/references/modules/codeman-knowledge/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-knowledge/module-guide.md": {
       "bytes": 4860,
       "sha256": "401c44ea7712cdbe41f7a14dc2ce1970b62be69006386cb77e5887a92f59aeac"
     },
@@ -1448,7 +1448,7 @@
       "bytes": 1764,
       "sha256": "19d1d4ecefc51dfced7e526aa31e1e349cc4f2be3f14ae674dfc0a40c34eeefa"
     },
-    "skills/codemaster/references/modules/codeman-malware-lab/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-malware-lab/module-guide.md": {
       "bytes": 4833,
       "sha256": "8f54055f96f317371ff3a19deedd77938de09a18cb5109c9c744914e5f67e198"
     },
@@ -1472,7 +1472,7 @@
       "bytes": 1757,
       "sha256": "262cebd5b832824a7c0b6c350d89200c94d5f93de25b960826af60c55c7eebdf"
     },
-    "skills/codemaster/references/modules/codeman-migration/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-migration/module-guide.md": {
       "bytes": 4839,
       "sha256": "1705f6aa64156d465dd3a94a05d7a5a3e3e91b27b29fe88a51234ad736d04018"
     },
@@ -1496,7 +1496,7 @@
       "bytes": 1761,
       "sha256": "9c147d1e92cd74c5858bcdb90e1d8229a58a05150e0eeb31469638885172d745"
     },
-    "skills/codemaster/references/modules/codeman-observability/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-observability/module-guide.md": {
       "bytes": 4869,
       "sha256": "31ec50632d6db72ea64e2fca508842e47a43d33b13603620be845059bae70814"
     },
@@ -1520,7 +1520,7 @@
       "bytes": 1588,
       "sha256": "0fbbfe94b8225826f095aca1483d5350dea725b85b1454c97443ab3a2253f5b0"
     },
-    "skills/codemaster/references/modules/codeman-ops/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-ops/module-guide.md": {
       "bytes": 3583,
       "sha256": "f22f7ebce00d4ccf24ac0ee761059d95b1aa6cab79c6edcda4f54b511baf71e7"
     },
@@ -1540,7 +1540,7 @@
       "bytes": 1763,
       "sha256": "31db40d1a4ef6de0e9aa37265a2afa1947786417b5e1d619613756f532d07d5b"
     },
-    "skills/codemaster/references/modules/codeman-orchestrator/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-orchestrator/module-guide.md": {
       "bytes": 5015,
       "sha256": "a271a89c1c38d39cc3da747c7075e6676eebb031139135bbce974e1d446cfd5f"
     },
@@ -1564,7 +1564,7 @@
       "bytes": 1755,
       "sha256": "97cbd7339c45f36eadb09368d3cec0496db3b96a0a5b5c95bab8c5bd3e9b9f9a"
     },
-    "skills/codemaster/references/modules/codeman-performance/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-performance/module-guide.md": {
       "bytes": 4805,
       "sha256": "070d6af6b596d6ee143048fedb591a8b9fd73ea901d7f0d80993c4d306db9936"
     },
@@ -1588,7 +1588,7 @@
       "bytes": 1617,
       "sha256": "ac3ce0669f1e335f8921ffcb85edbbffb6a993ac3770b3d8a5b32dda388b6e35"
     },
-    "skills/codemaster/references/modules/codeman-program/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-program/module-guide.md": {
       "bytes": 3651,
       "sha256": "0f98c7e7e6ac94fe270f3256b6011bb3a242e2bf6d5c402d86722669d189f769"
     },
@@ -1608,7 +1608,7 @@
       "bytes": 1587,
       "sha256": "53042f5b3424e98d7f45112474636f3736ab92e3eb781f9fdd0871f5543d9fb7"
     },
-    "skills/codemaster/references/modules/codeman-project/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-project/module-guide.md": {
       "bytes": 3584,
       "sha256": "9377b29743d7ddc150656124470f81f876ffa964bfc2fe696ff3fc0c3407c60a"
     },
@@ -1628,7 +1628,7 @@
       "bytes": 1747,
       "sha256": "1f7621cdec7f0c04b1283959c004843a74185ef848b6b4b9146bf087c8c1e514"
     },
-    "skills/codemaster/references/modules/codeman-protocol-lab/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-protocol-lab/module-guide.md": {
       "bytes": 4821,
       "sha256": "6803eb9d72db867dd8a719c24833b0a59c2fa87fa09dbb0f0fcf9823fc5da71b"
     },
@@ -1652,7 +1652,7 @@
       "bytes": 1736,
       "sha256": "05901f717ed3f7f55da2437637cde1745918859fb0a0bfa30a61ecfbf1406aef"
     },
-    "skills/codemaster/references/modules/codeman-recovery/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-recovery/module-guide.md": {
       "bytes": 4751,
       "sha256": "8a539a34a999835fbc12d2899328f038e4b7ab95be1e9c7465100607b6a4dc22"
     },
@@ -1676,7 +1676,7 @@
       "bytes": 1582,
       "sha256": "ed1da74264f60f422da563056e04bca3666c24648a2f4aa7107af0d58f8f08ac"
     },
-    "skills/codemaster/references/modules/codeman-red/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-red/module-guide.md": {
       "bytes": 3567,
       "sha256": "7a84c64af42af6eb7d4a1907cdb7fb784b8c963fc308b30a70c39e4274e2ca67"
     },
@@ -1696,7 +1696,7 @@
       "bytes": 1736,
       "sha256": "06a11a02756b5f02f9a7549c5996414561c8d9a7424fece93ba24940a041036f"
     },
-    "skills/codemaster/references/modules/codeman-release/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-release/module-guide.md": {
       "bytes": 4868,
       "sha256": "638f94c66b021f74ed91d41a706f01fd1221f20e2e64168c6f50e3d52c563a3a"
     },
@@ -1720,7 +1720,7 @@
       "bytes": 1795,
       "sha256": "474a72beda6a738de19231d55a34bd56403b1a9e9ecea4f79a0bbe1d36120f91"
     },
-    "skills/codemaster/references/modules/codeman-repository-mapper/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-repository-mapper/module-guide.md": {
       "bytes": 4869,
       "sha256": "9e2524c207f5d1dd5dc324bfde4516c7f1018c20f73b2bdd9cd897c838df9353"
     },
@@ -1744,7 +1744,7 @@
       "bytes": 1759,
       "sha256": "bd100f4141ceeac4a298d986d1f1899b74984055f8cb631aeaa978090c768034"
     },
-    "skills/codemaster/references/modules/codeman-research/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-research/module-guide.md": {
       "bytes": 4865,
       "sha256": "6e6ebb479da12067fd88e21a0f8de768a673edda200ac6bb67237f35f9f379b0"
     },
@@ -1768,7 +1768,7 @@
       "bytes": 1590,
       "sha256": "b6c396ee5c73918a5390133c760ab9d274a76d770e631b43b8be3aa71c063e9b"
     },
-    "skills/codemaster/references/modules/codeman-reverse/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-reverse/module-guide.md": {
       "bytes": 3581,
       "sha256": "4c318281f4391a06429b0a8570e64defec6562ecaa7b069c0cd8ee60f56c412a"
     },
@@ -1788,7 +1788,7 @@
       "bytes": 1598,
       "sha256": "a51fc3a9b261025a0f2fc5ecf129ee80335144a85e755b467ca0130426a9a0b8"
     },
-    "skills/codemaster/references/modules/codeman-security/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-security/module-guide.md": {
       "bytes": 3599,
       "sha256": "0df646882eddcdc3e3c6500fa0ad9eb32b6bf47c02830490e754ecab2f9391e2"
     },
@@ -1808,7 +1808,7 @@
       "bytes": 1757,
       "sha256": "694167dd0b1f1948dc8e5bcab9ede616630fdac2f574f427ad554dd9c4053cb8"
     },
-    "skills/codemaster/references/modules/codeman-supply-chain/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-supply-chain/module-guide.md": {
       "bytes": 4877,
       "sha256": "6c61c630bce6ab222667f64ab83db500b4045595f9fe72ad311553b6d1124532"
     },
@@ -1832,7 +1832,7 @@
       "bytes": 1582,
       "sha256": "3822620c607593ef35af590cfe8357011de2681be600c681f5c1d7b2095a2ad0"
     },
-    "skills/codemaster/references/modules/codeman-tester/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-tester/module-guide.md": {
       "bytes": 3563,
       "sha256": "fda12bf21bab2798aaee1cf5f25650fae37e251997361a59c3bd5a60da615f4b"
     },
@@ -1852,7 +1852,7 @@
       "bytes": 1736,
       "sha256": "a065511d7485cc35eb7a631ebcae6684321ef23f6243fe471cb04b1e0342e41d"
     },
-    "skills/codemaster/references/modules/codeman-ui-ux/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-ui-ux/module-guide.md": {
       "bytes": 4806,
       "sha256": "0ad804c754953f45dff5f8264ac8bb36927cbf19ebbd485c2bc0b7b6b74e14f8"
     },
@@ -1876,7 +1876,7 @@
       "bytes": 1559,
       "sha256": "453d8aaeefd1e5d2066137183933b634c686a0c4a7c526af181fc10e5b2d02d2"
     },
-    "skills/codemaster/references/modules/codeman-web/SKILL.md": {
+    "skills/codemaster/references/modules/codeman-web/module-guide.md": {
       "bytes": 3582,
       "sha256": "7c7cf1320c07e93915ab4a228c0c5fcec813703a07f8fb94a245b5bfbfd8bd4c"
     },
@@ -1901,12 +1901,12 @@
       "sha256": "240da483486488b570e20a19377f019efc3ff173635c2efe39b369fb83f1992f"
     },
     "tools/build_packages.py": {
-      "bytes": 3142,
-      "sha256": "7a83fb140f8a2781b58746a78fad9caf8899fc624592a4028460ff47c89f84c9"
+      "bytes": 3376,
+      "sha256": "fb1f15781c7dd80f6f27d81177c1f1c448203505125ff356e7541a2ca367a3b6"
     },
     "tools/verify_packages.py": {
-      "bytes": 3532,
-      "sha256": "7b01269c323379afbfe9f6d5191808d51a819dc4abc86926434da6bd7e662475"
+      "bytes": 4051,
+      "sha256": "3f0d672430149eb3ff2e4dc55c4736bfe70386517455e2c2e726d5a535518b58"
     },
     "upload-zips/codeman-api.zip": {
       "bytes": 10487,
@@ -2069,8 +2069,8 @@
       "sha256": "d5132bb0b6a0e2a5b7b6b16d686ec28c02f7cddd83fecc2abe9bb8702e511fad"
     },
     "upload-zips/codemaster.zip": {
-      "bytes": 423415,
-      "sha256": "6bf61bed39b5f8dbd364c9d6baa2ddf1b93a9249bcfb06b58b70a94cac9d917b"
+      "bytes": 424113,
+      "sha256": "30460c9f91264a06c8516331f2683ff2b610c7db259365455980069fbd5271cd"
     }
   },
   "schema_version": 1,

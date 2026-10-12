@@ -12,7 +12,7 @@ The source of truth is under `skills/<skill-name>/`. Each ZIP in `upload-zips/` 
 
 ## 2. Decide which installation style you want
 
-**Codemaster only**: Install `upload-zips/codemaster.zip`. Codemaster bundles all 40 specialist instruction and reference trees internally. This is best for broad, multi-language, cross-domain projects. It evaluates all 40 modules for relevance; it does not claim to launch 40 agents or run every test.
+**Codemaster only**: Install `upload-zips/codemaster.zip` (one skill entry point, 40 bundled `module-guide.md` playbooks). Codemaster bundles all 40 specialist instruction and reference trees internally. This is best for broad, multi-language, cross-domain projects. It evaluates all 40 modules for relevance; it does not claim to launch 40 agents or run every test.
 
 **Individual specialties**: Install any subset of the other 40 ZIPs. Every specialist retains the public operating contract and works independently, even when Codemaster and Core are absent. This is best when you want narrow triggering or to minimize skill footprint.
 
@@ -32,7 +32,7 @@ Examples: `Use Codeman Guardian and Codeman Tester to implement a change with re
 
 1. Reads its mandatory `references/operating-contract.md` (preservation rules, complete implementation, no surprise feature removals, GitHub-credit restrictions).
 2. Evaluates the entire list in `references/module-index.md` for relevance to the actual task.
-3. Reads the full bundled `SKILL.md` and all required references for every applicable specialist.
+3. Reads the full bundled `module-guide.md` and all required references for every applicable specialist.
 4. Inventories existing code and interfaces before edits; identifies cross-module dependencies.
 5. Performs authorized implementation only with tools actually available; verifies integration points.
 6. Records test evidence and unresolved risks; does not promise zero regressions without proof.
