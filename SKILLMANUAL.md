@@ -117,3 +117,11 @@ The builder assembles **41 ZIPs and one combined bundle** deterministically from
 **Background Gremlin Group — Creating Unique Tools for Unique Individuals.**
 
 Attribution is required in the root README and this manual for this distribution. An explicit software license is not included here; the repository owner should choose the appropriate license before setting terms for downstream redistribution. This manual does not grant additional rights by itself.
+
+## 13. Evaluation, routing, and release status
+
+The [evaluation harness](evals/README.md) provides reproducible coding tasks and a scorer for baseline-versus-skill **actual agent results**; package integrity is not a proxy for model performance. Until completed runs are recorded, do not claim demonstrated improvements.
+
+Codemaster first evaluates a compact `references/module-routing.json` table of all 40 specialties, then loads full guides only for applicable modules. Always apply core requirements and add Guardian plus Tester on code changes. The operating contract has one canonical source under `shared/` and identical local copies in every independently installable skill.
+
+See [versioned release notes](docs/releases/v1.0.0.md) and [release instructions](docs/RELEASING.md). GitHub Releases and collaborator-only PR restrictions are repository settings; creating or changing them requires the appropriate authenticated GitHub administration capability.

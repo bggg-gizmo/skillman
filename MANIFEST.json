@@ -4,21 +4,25 @@
       "bytes": 239,
       "sha256": "a2366d92140fac8b8e20506bc6e92e70ed6559a2dd0b9bfeecaa4a6512c52881"
     },
+    "LICENSE": {
+      "bytes": 1081,
+      "sha256": "b68b201d1d769a1faf3fe77b8aea632320f26f498189b049f1c887c82de1afd1"
+    },
     "README.md": {
-      "bytes": 11963,
-      "sha256": "ec9021ec6658bf00edad20d2f7ecff88d50c3272f0f6407c6a1ba3fa8946069d"
+      "bytes": 6462,
+      "sha256": "1538f4302be0ee6b6825356d0fef2f394b31167c0258d13bdd3df60a184038cf"
     },
     "SKILLMANUAL.md": {
-      "bytes": 10260,
-      "sha256": "0a63682d59b5da1baa3368558eae5216ff2675e8f12ac2c2a5490a418a722f23"
+      "bytes": 11225,
+      "sha256": "db6c01ee37f1fdb18fca212511a2378481f60755ce832b8108987e1291556cbe"
     },
     "bundles/README.md": {
       "bytes": 683,
       "sha256": "74e91eaa9845a66c71c3830a8765bcf87aa1afdf89ee5a504739109f5e435d55"
     },
     "bundles/skillman-all-public-skills.zip": {
-      "bytes": 1489674,
-      "sha256": "a13040140873d055d2c9c3d22dd0130f3e12d0ba89a23c28544f10a000fd6c6d"
+      "bytes": 1514128,
+      "sha256": "d9be79857e96de4268433e8834612d863e1025e0881bd1286e3a9ee422d8ebad"
     },
     "config.example.json": {
       "bytes": 261,
@@ -33,16 +37,100 @@
       "sha256": "37027f2d3eb43d8febd4b68cb61ce1b5bc457e605e4b74a0e1fcdde4cd727246"
     },
     "docs/CONTRIBUTING.md": {
-      "bytes": 997,
-      "sha256": "abec6e38f2451eb066c18764934351991914725f5f41e08f51f005404de2a9ed"
+      "bytes": 1689,
+      "sha256": "c7e6b73268b7214e8cbe98f42553ed5f9cf02da263475d5ff28c03a5793ea50d"
     },
     "docs/PUBLISHING.md": {
-      "bytes": 1322,
-      "sha256": "845a6c1e200b503c2909a5d8d252a75b3b3aaa6037ea4542ba3f526fc2f7bc82"
+      "bytes": 1721,
+      "sha256": "6f4a6dc3885a5fadda6591cd46fe9c25b60e7ffd5aff48abeeaddb290320f9f6"
+    },
+    "docs/RELEASING.md": {
+      "bytes": 2140,
+      "sha256": "3315c46780f4bcdf192c2d156f2b279b63bc2a1b458f62046f69c63b2087c961"
     },
     "docs/SECURITY.md": {
       "bytes": 1176,
       "sha256": "0f2be50974c88931edb5de505c0aab53a2b8b44324be852b6774a13d8a614b0d"
+    },
+    "docs/releases/v1.0.0.md": {
+      "bytes": 1165,
+      "sha256": "478b51857cd6c6bb93d8f54b238f152b8ee31a21cae9ce40489ade6453e5dbb3"
+    },
+    "evals/README.md": {
+      "bytes": 3904,
+      "sha256": "368a6664a72a5a9b3ab165a8c4da8404b8c8f93f8769ce9ed02f89675fb27aa4"
+    },
+    "evals/run.py": {
+      "bytes": 4231,
+      "sha256": "7e5aa5d7a6daa53a4d396c462dd64c736f28c9993306f9f0de04c7c94e12160a"
+    },
+    "evals/tasks/api-integration/TASK.md": {
+      "bytes": 334,
+      "sha256": "af3e7d7194da22d92906378a76e057b75fa90cf3eb73513e133743d04a652510"
+    },
+    "evals/tasks/api-integration/tests/test_solution.py": {
+      "bytes": 1031,
+      "sha256": "cf246b2740b4885266d2e4f5049d14917f0732df1d73b3a5141b3a58393f10b2"
+    },
+    "evals/tasks/api-integration/workspace/app.py": {
+      "bytes": 192,
+      "sha256": "a9f8a636f489ca7b4cd92a52a809aff8cde19c507aed8f0c8638657d2d0ae229"
+    },
+    "evals/tasks/api-integration/workspace/router.py": {
+      "bytes": 406,
+      "sha256": "e1fe5c5d4db38d19f1e947026650edcad4fdb838eaf978dd3f2304ef0581f754"
+    },
+    "evals/tasks/api-integration/workspace/service.py": {
+      "bytes": 142,
+      "sha256": "5cd6a746453873f7c8a68e1f231c5b2a5d284810441c943f6ed1c47eae52b733"
+    },
+    "evals/tasks/feature-preservation/TASK.md": {
+      "bytes": 415,
+      "sha256": "d5df57299a890ad7b0d742ea0615b3400015c50d8686591fd58d7dff2bdadb3d"
+    },
+    "evals/tasks/feature-preservation/tests/test_solution.py": {
+      "bytes": 872,
+      "sha256": "648ad10f83a9e8b0d02eb3293200b2a66bfe9420b52f36de19c425de80194b27"
+    },
+    "evals/tasks/feature-preservation/workspace/calculator.py": {
+      "bytes": 576,
+      "sha256": "945fed38743d99067b0e02b18377612b35a48e0ede5cebb5b9e41b9332fee10b"
+    },
+    "evals/tasks/performance-preservation/TASK.md": {
+      "bytes": 387,
+      "sha256": "aa355539c003b6c3ad85fac60c0639be323cb218b980ee6a0d61b0a6f0640999"
+    },
+    "evals/tasks/performance-preservation/tests/test_solution.py": {
+      "bytes": 981,
+      "sha256": "1a582be30321b44acb3691c26e0cb983fcbd091add1b05f80b47229a2cee24d7"
+    },
+    "evals/tasks/performance-preservation/workspace/stats.py": {
+      "bytes": 224,
+      "sha256": "078b2831147cbe729d09b2cbd9b5c0d41e30bc0bbf80ecb7d3e0d3ccff3b6fbf"
+    },
+    "evals/tasks/untrusted-input/TASK.md": {
+      "bytes": 379,
+      "sha256": "8e1257c7e1df2b535500ab34d17b9f2aa3a93b64b05cdf26c193b6a3afe8b5e0"
+    },
+    "evals/tasks/untrusted-input/tests/test_solution.py": {
+      "bytes": 905,
+      "sha256": "8c2f4eaa2319771938beb4539aa157e03e83759f13eea92351ed5b48b7c42f33"
+    },
+    "evals/tasks/untrusted-input/workspace/config_reader.py": {
+      "bytes": 180,
+      "sha256": "9b62a97c9a0878acdc994cb3c8c99156dec141229b9762868aa355742458b1ed"
+    },
+    "evals/test_evals.py": {
+      "bytes": 1836,
+      "sha256": "baccdba6c1c25d85be45ce233d74cdec673e6ab71bb9aa92af1112b64fc28ee8"
+    },
+    "shared/README.md": {
+      "bytes": 681,
+      "sha256": "dc4f6f7ae3bfabcb75a3ea706290ab5fc8a9f4b88771dedf2d65f51f7b62da4c"
+    },
+    "shared/operating-contract.md": {
+      "bytes": 5118,
+      "sha256": "8995746decf4db3b6f6974eb8c2ecbb5c84ace263a75c2994293d68f6342e59b"
     },
     "skills/codeman-api/README.md": {
       "bytes": 1734,
@@ -965,8 +1053,8 @@
       "sha256": "a6dcef39a0b94a550e0b37be630d48bb4f14ba5a1e447c4fd7d20ce43502e7a2"
     },
     "skills/codemaster/SKILL.md": {
-      "bytes": 4003,
-      "sha256": "bc6c3fed680e8688c7f92b2a9996365a692df3c4420a2782b015539e57fd047b"
+      "bytes": 4895,
+      "sha256": "a9178de0f87f08c84742a163219a3f81d3fa568cab39187c0cb877c00844a2fa"
     },
     "skills/codemaster/references/local-configuration.md": {
       "bytes": 2774,
@@ -975,6 +1063,10 @@
     "skills/codemaster/references/module-index.md": {
       "bytes": 5316,
       "sha256": "6cc74f5c771465eb0240c4496d882cf2660bdad0429ef83a392a9c6b50a28ca1"
+    },
+    "skills/codemaster/references/module-routing.json": {
+      "bytes": 12230,
+      "sha256": "27b2d146c8296581f68d4234a18afcc76b94cf29330f893a4771ef0a117cfcab"
     },
     "skills/codemaster/references/modules/codeman-api/README.md": {
       "bytes": 1734,
@@ -1901,12 +1993,20 @@
       "sha256": "240da483486488b570e20a19377f019efc3ff173635c2efe39b369fb83f1992f"
     },
     "tools/build_packages.py": {
-      "bytes": 3376,
-      "sha256": "fb1f15781c7dd80f6f27d81177c1f1c448203505125ff356e7541a2ca367a3b6"
+      "bytes": 3780,
+      "sha256": "6d83fedfc42420098cd2d11a43da5bf23e6bcfacff06180ea1cdbbe3e24e772e"
+    },
+    "tools/check_routing.py": {
+      "bytes": 1311,
+      "sha256": "b6b429a05fc3f1d4ab26875018aa631281d978202f6d16afa50436ac0d876c31"
+    },
+    "tools/sync_shared.py": {
+      "bytes": 1129,
+      "sha256": "37772546646c07efc6e31754377f5391bb0774b464aaa0b542e0395164a417ce"
     },
     "tools/verify_packages.py": {
-      "bytes": 4051,
-      "sha256": "3f0d672430149eb3ff2e4dc55c4736bfe70386517455e2c2e726d5a535518b58"
+      "bytes": 4746,
+      "sha256": "3b403b3df97937cee9cb55aeb8a6b8dcb82b9d6013710723c28506524b48299d"
     },
     "upload-zips/codeman-api.zip": {
       "bytes": 10487,
@@ -2069,8 +2169,8 @@
       "sha256": "d5132bb0b6a0e2a5b7b6b16d686ec28c02f7cddd83fecc2abe9bb8702e511fad"
     },
     "upload-zips/codemaster.zip": {
-      "bytes": 424113,
-      "sha256": "30460c9f91264a06c8516331f2683ff2b610c7db259365455980069fbd5271cd"
+      "bytes": 427161,
+      "sha256": "51df59dc9aab93fd01d7df1a13e6ce2248aafe808a8ca78503fad1c8ddc2a231"
     }
   },
   "schema_version": 1,

@@ -13,8 +13,8 @@ Read `references/operating-contract.md` and apply it on every task. Do not infer
 
 ## Mandatory coordination procedure
 
-1. **Inventory all specialties:** Read `references/module-index.md` completely. Evaluate applicability of **every one of the 40 specialties** for this particular task, using explicit relevance criteria. The entire suite is available as bundled references regardless of individual installations.
-2. **Read relevant complete playbooks:** For every applicable specialty, read its bundled `references/modules/<skill-name>/module-guide.md` and the reference documents it calls out. Do not treat a one-line index entry as a replacement for the complete instructions. Preserve the specialist requirements verbatim where they apply.
+1. **Cheap complete inventory (mandatory):** Read `references/module-routing.json`. Assess **all 40** descriptions and signals for applicability without loading every full playbook. Use `references/module-index.md` to inspect detailed paths and coverage when needed. Apply `codeman-core` on every task; also select `codeman-guardian` and `codeman-tester` for every code-modification task, whether or not keywords match. Mark unrelated modules *not applicable*, not *executed*. Never skip any of the 40 relevance decisions.
+2. **Load only applicable complete playbooks:** Read `references/modules/<skill-name>/module-guide.md` and its required references only for the specialties selected in step 1. Never load all 40 full guides merely because they are bundled. Reselect when new project facts implicate another specialty. Do not treat a one-line routing signal as a substitute for an applicable complete guide. Preserve every applicable specialist requirement.
 3. **Establish facts and permissions:** Inspect the actual files, repository, application, existing changes, test environment, and available tools. Separate verified facts from assumptions. Request and use external access only within authorization and host constraints.
 4. **Create a preservation baseline:** Inventory existing functions, interfaces, behavior, configuration, assets and integration paths. Guard pre-existing user work. Identify tests and evidence that can detect regression.
 5. **Orchestrate the work:** Determine ordering and responsibility among relevant specialties. Architect/Mapper and Guardian precede invasive edits; Coder/Program/Domain skills implement; Integrator connects call paths; Tester/Auditor/Security verify; Release/Documentation finish requested deliverables. Do not replace requested complete files with summaries.
@@ -24,6 +24,10 @@ Read `references/operating-contract.md` and apply it on every task. Do not infer
 ## Priority, incompatibility, and safety
 
 Higher-priority system requirements and permitted access always take precedence. When specialist instructions conflict, enforce the common operating contract, user-approved scope, and measurable preservation criteria; identify unresolved conflicts instead of inventing a resolution. Read-only security analysis does not authorize mutation or deployment. Only claim a tool, scan, test, build, push, or release when it actually ran.
+
+## Efficiency and coverage contract
+
+Routing considers all 40 specialists, but **does not activate or preload all 40**. Apply the mandatory contract, preservation, integration and test requirements regardless of selection. Read full references when the specific task requires them. Log selected specialties, briefly note material exclusions, and re-evaluate on scope changes. This reduces unnecessary context use without dropping coverage. `module-routing.json` is the compact routing source; `module-index.md` remains the human-readable complete index.
 
 ## Module ownership
 

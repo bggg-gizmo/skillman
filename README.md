@@ -1,120 +1,113 @@
-# Skillman — Codeman Skills
+<div align="center">
 
-**Background Gremlin Group — Creating Unique Tools for Unique Individuals**
+# SKILLMAN
 
-[Skillmanual](SKILLMANUAL.md) · [Codemaster](skills/codemaster/) · [Complete public bundle](bundles/skillman-all-public-skills.zip)
+### Modular engineering skills for AI coding agents
 
-**40 independent coding, software engineering, cybersecurity, and operational skills**, prepared for public use. This repository contains the complete editable `SKILL.md` source for each skill, plus individually packaged ZIP archives for import into compatible agent interfaces.
+**Background Gremlin Group**  
+*Creating Unique Tools for Unique Individuals*
 
-These are reusable **agent skills**, not preinstalled software or autonomous access grants. They guide an agent's workflow when activated and when the relevant files, tools, and permissions are available.
+**41 installable skills** · **40 focused specialists** · **1 unified Codemaster**
 
-## Quick start
+[Get started](#get-started) · [Skillmanual](SKILLMANUAL.md) · [Skill catalog](docs/CATALOG.md) · [Evaluations](evals/README.md) · [Contribute](docs/CONTRIBUTING.md)
 
-1. Read the [Skillmanual](SKILLMANUAL.md) and browse the [40-skill catalog](docs/CATALOG.md). Install [Codemaster](upload-zips/codemaster.zip) for one bundled master skill, or select individual specialties.
-2. Download the chosen standalone ZIP from [`upload-zips/`](upload-zips/), or the [complete offline bundle](bundles/skillman-all-public-skills.zip) to obtain every ZIP at once. Do **not** upload the complete bundle as a single skill.
-3. In a compatible ChatGPT Skills interface, use the available **Create / Upload** option to install one ZIP per skill. The exact UI and availability depend on the client and account.
-4. For other compatible local agent environments, follow that agent's documented skill directory/import mechanism and use the unzipped directory under [`skills/`](skills/). A skill does not automatically install compilers, security tools, or connectors.
-5. Invoke the skill by name or describe a task matching its activation description. For example: **"Use Codeman Guardian and Codeman Tester to inventory the existing behavior, implement this change completely, and verify no regressions."**
+</div>
 
-## What is covered
+---
 
-| Area | Skills |
-| --- | --- |
-| Core coding | Core, Program, Coder, Project, Guardian, Architect, Orchestrator, Integrator |
-| Assurance and delivery | Tester, Auditor, Build Doctor, Release, Recovery, Contracts, Repository Mapper, Documentation |
-| Security | Security, Red, Blue, Reverse, Fuzz Lab, Protocol Lab, Malware Lab, Detection Lab, Forensics, Supply Chain |
-| Platforms and operations | Web, Ops, Desktop, Database, API, UI/UX, Performance, Dependencies, Observability, Migration, Automation |
-| Repository and knowledge | GitHub, Knowledge, Research |
+## Build complete systems. Keep their existing features.
 
-The [catalog](docs/CATALOG.md) lists and links **all 40** specialties. The additional **Codemaster** skill bundles their complete instructions and references as 40 `module-guide.md` documents in one independently installable ZIP, with exactly one `SKILL.md` entry point. See the [manual](SKILLMANUAL.md).
+Skillman is a public, portable suite of instruction-based agent skills for software development, security, testing, reverse engineering, infrastructure, and delivery. Each skill includes a reusable workflow and verification criteria. The **Codemaster** package combines all 40 specialties without requiring 40 separate installations.
 
-## Complete implementation and preservation requirements
+Skills guide the agent; they do not grant tool permissions, install software, or guarantee successful execution. **No GitHub-credit-consuming operations** are authorized by these skills.
 
-Every skill contains `references/operating-contract.md`, which requires preservation of existing functions and features, complete implementations and integration, targeted regression checks, accurate reporting of tests actually run, and authorization for changes. No skill may silently remove or simplify existing behavior. These instructions guide work; they cannot guarantee an absence of bugs or bypass unavailable test environments.
+### Choose your setup
 
-The shared contract also forbids GitHub-credit-consuming actions, including workflows and other metered GitHub execution. A GitHub connector is used only if the current operator expressly requests it. Remote writes that may trigger metered automation must not be run without a confirmed non-metered path.
+| Option | Best for | Install |
+|---|---|---|
+| **Codemaster** | Projects spanning multiple specialties | [Download Codemaster ZIP](upload-zips/codemaster.zip) |
+| **Individual Codeman skills** | Narrow tasks and smaller skill footprints | [Browse all 40 ZIPs](upload-zips/) |
+| **Offline collection** | Maintaining or distributing the entire set | [Download complete bundle](bundles/skillman-all-public-skills.zip) |
 
-## Portable configuration — no creator-specific account or repo
+> **Important:** The complete collection ZIP is not one installable skill. Extract it and upload the individual skill ZIP you want, or install Codemaster alone.
 
-**No public skill is preconfigured with an author's GitHub account, private or personal repositories, filesystem paths, or application intro montage.** The original author-specific montage reference was removed from the public edition.
+## Get started
 
-If your own project needs repository pointers or a startup montage:
+1. Download `codemaster.zip` above or a specialty ZIP from [`upload-zips/`](upload-zips/).
+2. In a compatible skill-enabled agent interface, select **Create / Upload** and choose that single ZIP. For local agent runtimes, install the corresponding directory under [`skills/`](skills/) using your host's documented process.
+3. Provide project sources or authorized repository access. The skills do **not** include any individual's credentials, repositories, or local machine configuration.
+4. Ask the agent to activate Codemaster or a specialist, then require an implementation, integration checks and evidence from tests it actually ran.
 
-1. Copy [`config.example.json`](config.example.json) into your own project's `.codeman/config.json`.
-2. Enter the repositories and existing assets relevant to **your** project; if no asset is required, leave the configuration unpopulated.
-3. Keep the resulting `.codeman/config.json` private (the [`.gitignore`](.gitignore) ignores this file). Do not store credentials inside it.
-4. The skill reads the configuration only if your agent has access to that project and your request authorizes the related operation.
+```text
+Use Codemaster to inspect this application, preserve every existing feature,
+implement the requested change completely, verify its integration paths,
+and report all tests actually executed and any unverified requirements.
+```
 
-See [configuration details](docs/CONFIGURATION.md). A project-specific configuration is optional; skills remain usable without it.
+See the detailed [SKILLMANUAL](SKILLMANUAL.md) for individual installation, project settings, workflow selection, troubleshooting, and maintenance.
 
-## Repository layout
+## Inside the collection
 
-The [`skills/codemaster/`](skills/codemaster/) directory is the master package. Its [`codemaster.zip`](upload-zips/codemaster.zip) contains the full reference snapshots for all 40 specialists. The [`bundles/`](bundles/) folder contains a complete offline ZIP of all public sources and individual packages. Every skill folder includes its own README.
+| Domain | Example specialties |
+|---|---|
+| Engineering | Core, Program, Coder, Guardian, Architect, Integrator, Auditor |
+| Verification & delivery | Tester, Build Doctor, Recovery, Contracts, Release, Dependencies |
+| Security | Security, Red, Blue, Fuzz Lab, Malware Lab, Detection Lab, Forensics, Reverse |
+| Applications | Web, Desktop, API, Database, UI/UX, Performance |
+| Operations & knowledge | Ops, GitHub, Repository Mapper, Research, Automation, Documentation |
 
-Every skill includes complete instructions and all its references. The source and installable ZIP of each skill are available directly from this repository.
+The [complete catalog](docs/CATALOG.md) contains all 40 individual skill names and links. Every specialist has its own [`README.md`](skills/) and an installable ZIP. Codemaster scans a **compact 40-specialty routing index** and loads only the matching full playbooks, so all specialties are considered without automatically loading them all.
 
-| Skill source directory | Individual ZIP |
-| --- | --- |
-| [`skills/codeman-api/`](skills/codeman-api/) | [`codeman-api.zip`](upload-zips/codeman-api.zip) |
-| [`skills/codeman-architect/`](skills/codeman-architect/) | [`codeman-architect.zip`](upload-zips/codeman-architect.zip) |
-| [`skills/codeman-auditor/`](skills/codeman-auditor/) | [`codeman-auditor.zip`](upload-zips/codeman-auditor.zip) |
-| [`skills/codeman-automation/`](skills/codeman-automation/) | [`codeman-automation.zip`](upload-zips/codeman-automation.zip) |
-| [`skills/codeman-blue/`](skills/codeman-blue/) | [`codeman-blue.zip`](upload-zips/codeman-blue.zip) |
-| [`skills/codeman-build-doctor/`](skills/codeman-build-doctor/) | [`codeman-build-doctor.zip`](upload-zips/codeman-build-doctor.zip) |
-| [`skills/codeman-coder/`](skills/codeman-coder/) | [`codeman-coder.zip`](upload-zips/codeman-coder.zip) |
-| [`skills/codeman-contracts/`](skills/codeman-contracts/) | [`codeman-contracts.zip`](upload-zips/codeman-contracts.zip) |
-| [`skills/codeman-core/`](skills/codeman-core/) | [`codeman-core.zip`](upload-zips/codeman-core.zip) |
-| [`skills/codeman-database/`](skills/codeman-database/) | [`codeman-database.zip`](upload-zips/codeman-database.zip) |
-| [`skills/codeman-dependencies/`](skills/codeman-dependencies/) | [`codeman-dependencies.zip`](upload-zips/codeman-dependencies.zip) |
-| [`skills/codeman-desktop/`](skills/codeman-desktop/) | [`codeman-desktop.zip`](upload-zips/codeman-desktop.zip) |
-| [`skills/codeman-detection-lab/`](skills/codeman-detection-lab/) | [`codeman-detection-lab.zip`](upload-zips/codeman-detection-lab.zip) |
-| [`skills/codeman-documentation/`](skills/codeman-documentation/) | [`codeman-documentation.zip`](upload-zips/codeman-documentation.zip) |
-| [`skills/codeman-forensics/`](skills/codeman-forensics/) | [`codeman-forensics.zip`](upload-zips/codeman-forensics.zip) |
-| [`skills/codeman-fuzz-lab/`](skills/codeman-fuzz-lab/) | [`codeman-fuzz-lab.zip`](upload-zips/codeman-fuzz-lab.zip) |
-| [`skills/codeman-github/`](skills/codeman-github/) | [`codeman-github.zip`](upload-zips/codeman-github.zip) |
-| [`skills/codeman-guardian/`](skills/codeman-guardian/) | [`codeman-guardian.zip`](upload-zips/codeman-guardian.zip) |
-| [`skills/codeman-integrator/`](skills/codeman-integrator/) | [`codeman-integrator.zip`](upload-zips/codeman-integrator.zip) |
-| [`skills/codeman-knowledge/`](skills/codeman-knowledge/) | [`codeman-knowledge.zip`](upload-zips/codeman-knowledge.zip) |
-| [`skills/codeman-malware-lab/`](skills/codeman-malware-lab/) | [`codeman-malware-lab.zip`](upload-zips/codeman-malware-lab.zip) |
-| [`skills/codeman-migration/`](skills/codeman-migration/) | [`codeman-migration.zip`](upload-zips/codeman-migration.zip) |
-| [`skills/codeman-observability/`](skills/codeman-observability/) | [`codeman-observability.zip`](upload-zips/codeman-observability.zip) |
-| [`skills/codeman-ops/`](skills/codeman-ops/) | [`codeman-ops.zip`](upload-zips/codeman-ops.zip) |
-| [`skills/codeman-orchestrator/`](skills/codeman-orchestrator/) | [`codeman-orchestrator.zip`](upload-zips/codeman-orchestrator.zip) |
-| [`skills/codeman-performance/`](skills/codeman-performance/) | [`codeman-performance.zip`](upload-zips/codeman-performance.zip) |
-| [`skills/codeman-program/`](skills/codeman-program/) | [`codeman-program.zip`](upload-zips/codeman-program.zip) |
-| [`skills/codeman-project/`](skills/codeman-project/) | [`codeman-project.zip`](upload-zips/codeman-project.zip) |
-| [`skills/codeman-protocol-lab/`](skills/codeman-protocol-lab/) | [`codeman-protocol-lab.zip`](upload-zips/codeman-protocol-lab.zip) |
-| [`skills/codeman-recovery/`](skills/codeman-recovery/) | [`codeman-recovery.zip`](upload-zips/codeman-recovery.zip) |
-| [`skills/codeman-red/`](skills/codeman-red/) | [`codeman-red.zip`](upload-zips/codeman-red.zip) |
-| [`skills/codeman-release/`](skills/codeman-release/) | [`codeman-release.zip`](upload-zips/codeman-release.zip) |
-| [`skills/codeman-repository-mapper/`](skills/codeman-repository-mapper/) | [`codeman-repository-mapper.zip`](upload-zips/codeman-repository-mapper.zip) |
-| [`skills/codeman-research/`](skills/codeman-research/) | [`codeman-research.zip`](upload-zips/codeman-research.zip) |
-| [`skills/codeman-reverse/`](skills/codeman-reverse/) | [`codeman-reverse.zip`](upload-zips/codeman-reverse.zip) |
-| [`skills/codeman-security/`](skills/codeman-security/) | [`codeman-security.zip`](upload-zips/codeman-security.zip) |
-| [`skills/codeman-supply-chain/`](skills/codeman-supply-chain/) | [`codeman-supply-chain.zip`](upload-zips/codeman-supply-chain.zip) |
-| [`skills/codeman-tester/`](skills/codeman-tester/) | [`codeman-tester.zip`](upload-zips/codeman-tester.zip) |
-| [`skills/codeman-ui-ux/`](skills/codeman-ui-ux/) | [`codeman-ui-ux.zip`](upload-zips/codeman-ui-ux.zip) |
-| [`skills/codeman-web/`](skills/codeman-web/) | [`codeman-web.zip`](upload-zips/codeman-web.zip) |
+## Safeguards and quality
 
-The [Skillmanual](SKILLMANUAL.md) explains installation, all-module routing, local configuration, testing, contribution, and publication.
+- **Feature preservation:** Existing functions, integrations, interfaces and behaviors are mandatory unless explicitly changed by the operator.
+- **Complete implementation:** Avoid placeholders, pseudocode and silently omitted requested files; report inaccessible requirements rather than pretending they were implemented.
+- **Project isolation:** Personal repos, startup assets and machine paths are not embedded; peers use optional [local configuration](docs/CONFIGURATION.md).
+- **Transparent verification:** Packaging checks test archive integrity, while [agent evaluations](evals/README.md) must be run in a compatible agent environment to measure task performance. Results are not claimed where no agent run occurred.
+- **No GitHub credits:** The skills prohibit metered GitHub execution and unapproved workflow-triggering writes.
 
-Other repository files: [`config.example.json`](config.example.json), [`docs/CONFIGURATION.md`](docs/CONFIGURATION.md), [`docs/SECURITY.md`](docs/SECURITY.md), [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md), [`docs/CATALOG.md`](docs/CATALOG.md), [`tools/build_packages.py`](tools/build_packages.py), [`tools/audit_distribution.py`](tools/audit_distribution.py), [`tools/verify_packages.py`](tools/verify_packages.py), [`MANIFEST.json`](MANIFEST.json), and [`SHA256SUMS`](SHA256SUMS).
+### Development and verification
 
-## Verify or rebuild locally
-
-Use Python 3.10 or later. No third-party packages, network calls, remote workflows, or GitHub credits are required.
+With Python 3.10+ at the repository root:
 
 ```bash
+python tools/sync_shared.py --check
+python tools/check_routing.py
 python tools/build_packages.py
 python tools/audit_distribution.py
 python tools/verify_packages.py
+python -m unittest discover -s evals -p 'test_*.py' -v
 ```
 
-`build_packages.py` creates deterministic standalone archives plus the complete public bundle from the source under `skills/` and regenerates the integrity manifest. The audit checks files and ZIP members for known personal/account identifiers and credentials. The verification checks names, references, ZIP integrity, deterministic source-to-archive equivalence, and SHA-256 digests. Do not interpret passing these checks as proof of security, runtime functionality, or flawless future application modifications.
+Shared requirements have a single canonical source: [`shared/operating-contract.md`](shared/operating-contract.md). The build ships identical copies in every standalone skill so each ZIP remains self-contained. [Evaluation instructions](evals/README.md) explain how to collect baseline-versus-skill results with an actual agent.
 
-## Maintenance and use
+## Project map
 
-- Read [contribution instructions](docs/CONTRIBUTING.md) before submitting a change.
-- Read [privacy and security guidance](docs/SECURITY.md) and [publication guidance](docs/PUBLISHING.md) before publishing a release.
-- **No software license is assigned in this package.** The repository owner should explicitly select and add a suitable license before encouraging downstream redistribution, modification, and reuse.
-- Original (private/personalized) archives are **not** included in this public distribution.
+| Location | Contents |
+|---|---|
+| [`skills/`](skills/) | 41 installable skill source directories; each with its own README |
+| [`upload-zips/`](upload-zips/) | Individual installable skill archives |
+| [`bundles/`](bundles/) | Complete offline distribution |
+| [`SKILLMANUAL.md`](SKILLMANUAL.md) | Full user and maintainer manual |
+| [`evals/`](evals/) | Reproducible task fixtures, agent-result scorer, evaluation methodology |
+| [`shared/`](shared/) | Single source of truth for the mandatory operating contract |
+| [`tools/`](tools/) | Local rebuild, audit, ZIP validation and routing checks |
+| [`docs/releases/`](docs/releases/) | Versioned release notes and GitHub release procedure |
+
+## Community, policy and license
+
+- Contributions: [Contributing](docs/CONTRIBUTING.md) · [Security reporting](docs/SECURITY.md)
+- Pull-request creation is presently restricted to collaborators on the GitHub repository. See [contribution policy](docs/CONTRIBUTING.md); external contributors can open an issue when permitted.
+- GitHub versioned Releases require a separate release-publishing step. The source archives here are published independently of a GitHub Release.
+- **License:** [MIT](LICENSE). Copyright © 2026 Background Gremlin Group.
+
+---
+
+<div align="center">
+
+**Background Gremlin Group**  
+*Creating Unique Tools for Unique Individuals*
+
+[Skillmanual](SKILLMANUAL.md) · [Catalog](docs/CATALOG.md) · [License](LICENSE)
+
+</div>

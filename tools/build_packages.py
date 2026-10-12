@@ -24,6 +24,11 @@ def pack_one(skill_dir:Path, archive:Path)->None:
             output.writestr(info,file.read_bytes(),compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
 
 def main()->None:
+    contract=(ROOT/'shared/operating-contract.md').read_bytes()
+    copies=list(SKILLS.glob('*/references/operating-contract.md'))
+    copies+=list((SKILLS/'codemaster'/'references'/'modules').glob('*/references/operating-contract.md'))
+    if len(copies)!=81 or any(f.read_bytes()!=contract for f in copies):
+        raise SystemExit('Shared contract not synchronized; run python tools/sync_shared.py')
     ARCHIVES.mkdir(exist_ok=True)
     skill_dirs=sorted(p for p in SKILLS.iterdir() if p.is_dir() and (p.name.startswith('codeman-') or p.name=='codemaster'))
     if len(skill_dirs)!=41 or not (SKILLS/'codemaster').exists(): raise SystemExit(f'Expected 41 skills including codemaster, found {len(skill_dirs)}')

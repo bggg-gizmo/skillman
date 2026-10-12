@@ -1,0 +1,452 @@
+{
+  "schema_version": 1,
+  "routing_strategy": "Evaluate exactly these 40 descriptions cheaply; load full specialty guide only for matching scope. Apply contract, preservation and verification gates globally.",
+  "mandatory_for_all_tasks": [
+    "codeman-core"
+  ],
+  "mandatory_for_code_modification": [
+    "codeman-guardian",
+    "codeman-tester"
+  ],
+  "modules": [
+    {
+      "name": "codeman-api",
+      "description": "REST, gRPC, GraphQL, WebSocket and API contracts",
+      "signals": [
+        "api",
+        "rest",
+        "graphql",
+        "grpc",
+        "websocket",
+        "openapi",
+        "endpoint"
+      ],
+      "guide": "references/modules/codeman-api/module-guide.md"
+    },
+    {
+      "name": "codeman-architect",
+      "description": "System architecture and dependencies",
+      "signals": [
+        "architecture",
+        "design",
+        "system boundaries",
+        "components"
+      ],
+      "guide": "references/modules/codeman-architect/module-guide.md"
+    },
+    {
+      "name": "codeman-auditor",
+      "description": "Comprehensive source and quality audits",
+      "signals": [
+        "audit",
+        "inspect",
+        "review",
+        "completeness"
+      ],
+      "guide": "references/modules/codeman-auditor/module-guide.md"
+    },
+    {
+      "name": "codeman-automation",
+      "description": "Automation, scripts and scheduled jobs",
+      "signals": [
+        "automate",
+        "script",
+        "cron",
+        "job"
+      ],
+      "guide": "references/modules/codeman-automation/module-guide.md"
+    },
+    {
+      "name": "codeman-blue",
+      "description": "Defensive engineering and response",
+      "signals": [
+        "defender",
+        "blue team",
+        "incident response",
+        "soc"
+      ],
+      "guide": "references/modules/codeman-blue/module-guide.md"
+    },
+    {
+      "name": "codeman-build-doctor",
+      "description": "Build failures and build environment repair",
+      "signals": [
+        "build error",
+        "compiler",
+        "dependency failure",
+        "linker",
+        "packaging"
+      ],
+      "guide": "references/modules/codeman-build-doctor/module-guide.md"
+    },
+    {
+      "name": "codeman-coder",
+      "description": "Engineering architecture, debugging, refactoring and code improvements",
+      "signals": [
+        "code",
+        "debug",
+        "refactor",
+        "implementation"
+      ],
+      "guide": "references/modules/codeman-coder/module-guide.md"
+    },
+    {
+      "name": "codeman-contracts",
+      "description": "Public APIs and compatibility contracts",
+      "signals": [
+        "compatibility",
+        "contract",
+        "interface",
+        "schema",
+        "signature"
+      ],
+      "guide": "references/modules/codeman-contracts/module-guide.md"
+    },
+    {
+      "name": "codeman-core",
+      "description": "Every task: mandatory operating contract, no regression and complete delivery",
+      "signals": [
+        "every task"
+      ],
+      "guide": "references/modules/codeman-core/module-guide.md"
+    },
+    {
+      "name": "codeman-database",
+      "description": "Schema design, transactions, migrations and query checks",
+      "signals": [
+        "database",
+        "sql",
+        "postgres",
+        "sqlite",
+        "migration"
+      ],
+      "guide": "references/modules/codeman-database/module-guide.md"
+    },
+    {
+      "name": "codeman-dependencies",
+      "description": "Dependency upgrades, compatibility and lockfiles",
+      "signals": [
+        "dependency",
+        "upgrade",
+        "lockfile",
+        "package"
+      ],
+      "guide": "references/modules/codeman-dependencies/module-guide.md"
+    },
+    {
+      "name": "codeman-desktop",
+      "description": "Native and desktop applications, installers",
+      "signals": [
+        "desktop",
+        "electron",
+        "qt",
+        "tauri",
+        "installer"
+      ],
+      "guide": "references/modules/codeman-desktop/module-guide.md"
+    },
+    {
+      "name": "codeman-detection-lab",
+      "description": "Sigma, YARA, Suricata and detection validation",
+      "signals": [
+        "sigma",
+        "yara",
+        "suricata",
+        "detection"
+      ],
+      "guide": "references/modules/codeman-detection-lab/module-guide.md"
+    },
+    {
+      "name": "codeman-documentation",
+      "description": "Developer-facing and operational documentation",
+      "signals": [
+        "documentation",
+        "manual",
+        "readme"
+      ],
+      "guide": "references/modules/codeman-documentation/module-guide.md"
+    },
+    {
+      "name": "codeman-forensics",
+      "description": "Forensics, evidence, timelines and chain of custody",
+      "signals": [
+        "forensic",
+        "timeline",
+        "evidence",
+        "disk image"
+      ],
+      "guide": "references/modules/codeman-forensics/module-guide.md"
+    },
+    {
+      "name": "codeman-fuzz-lab",
+      "description": "Fuzz harnesses and crash triage in authorized targets",
+      "signals": [
+        "fuzz",
+        "crash",
+        "coverage"
+      ],
+      "guide": "references/modules/codeman-fuzz-lab/module-guide.md"
+    },
+    {
+      "name": "codeman-github",
+      "description": "GitHub repository operations when explicitly asked",
+      "signals": [
+        "github",
+        "pull request",
+        "repository action"
+      ],
+      "guide": "references/modules/codeman-github/module-guide.md"
+    },
+    {
+      "name": "codeman-guardian",
+      "description": "Preserving existing features and verifying no regressions",
+      "signals": [
+        "preserve",
+        "no regression",
+        "feature",
+        "existing behavior"
+      ],
+      "guide": "references/modules/codeman-guardian/module-guide.md"
+    },
+    {
+      "name": "codeman-integrator",
+      "description": "Connecting complete implementations across boundaries",
+      "signals": [
+        "integrate",
+        "wire",
+        "end to end"
+      ],
+      "guide": "references/modules/codeman-integrator/module-guide.md"
+    },
+    {
+      "name": "codeman-knowledge",
+      "description": "Maintaining decisions and project documentation",
+      "signals": [
+        "decision log",
+        "knowledge base",
+        "adr"
+      ],
+      "guide": "references/modules/codeman-knowledge/module-guide.md"
+    },
+    {
+      "name": "codeman-malware-lab",
+      "description": "Malware triage and behavior analysis",
+      "signals": [
+        "malware",
+        "pe file",
+        "elf file",
+        "sample"
+      ],
+      "guide": "references/modules/codeman-malware-lab/module-guide.md"
+    },
+    {
+      "name": "codeman-migration",
+      "description": "Framework/platform/database migrations",
+      "signals": [
+        "migrate",
+        "migration",
+        "breaking change"
+      ],
+      "guide": "references/modules/codeman-migration/module-guide.md"
+    },
+    {
+      "name": "codeman-observability",
+      "description": "Logging, metrics, tracing and operational diagnostics",
+      "signals": [
+        "metrics",
+        "tracing",
+        "logging",
+        "telemetry"
+      ],
+      "guide": "references/modules/codeman-observability/module-guide.md"
+    },
+    {
+      "name": "codeman-ops",
+      "description": "Infrastructure, build, deployment and CI/CD design",
+      "signals": [
+        "docker",
+        "kubernetes",
+        "terraform",
+        "deployment",
+        "ci/cd"
+      ],
+      "guide": "references/modules/codeman-ops/module-guide.md"
+    },
+    {
+      "name": "codeman-orchestrator",
+      "description": "Cross-specialty orchestration and dependencies",
+      "signals": [
+        "coordinate",
+        "multiple modules",
+        "cross domain"
+      ],
+      "guide": "references/modules/codeman-orchestrator/module-guide.md"
+    },
+    {
+      "name": "codeman-performance",
+      "description": "Profiling, benchmarking and performance validation",
+      "signals": [
+        "slow",
+        "optimize",
+        "benchmark",
+        "latency",
+        "memory"
+      ],
+      "guide": "references/modules/codeman-performance/module-guide.md"
+    },
+    {
+      "name": "codeman-program",
+      "description": "Languages and implementation details",
+      "signals": [
+        "python",
+        "javascript",
+        "typescript",
+        "rust",
+        "c++",
+        "go",
+        "powershell",
+        "bash"
+      ],
+      "guide": "references/modules/codeman-program/module-guide.md"
+    },
+    {
+      "name": "codeman-project",
+      "description": "Repository-specific conventions and build rules",
+      "signals": [
+        "project standards",
+        "repo conventions",
+        "internal build"
+      ],
+      "guide": "references/modules/codeman-project/module-guide.md"
+    },
+    {
+      "name": "codeman-protocol-lab",
+      "description": "Protocol parsers and protocol conformance",
+      "signals": [
+        "protocol",
+        "pcap",
+        "packet"
+      ],
+      "guide": "references/modules/codeman-protocol-lab/module-guide.md"
+    },
+    {
+      "name": "codeman-recovery",
+      "description": "Regression triage and minimally invasive recovery",
+      "signals": [
+        "regression",
+        "broken build",
+        "rollback",
+        "recovery"
+      ],
+      "guide": "references/modules/codeman-recovery/module-guide.md"
+    },
+    {
+      "name": "codeman-red",
+      "description": "Authorized adversarial validation and testing",
+      "signals": [
+        "pentest",
+        "authorized exploit",
+        "red team"
+      ],
+      "guide": "references/modules/codeman-red/module-guide.md"
+    },
+    {
+      "name": "codeman-release",
+      "description": "Release packaging and deployment readiness",
+      "signals": [
+        "release",
+        "publish",
+        "version",
+        "distribution"
+      ],
+      "guide": "references/modules/codeman-release/module-guide.md"
+    },
+    {
+      "name": "codeman-repository-mapper",
+      "description": "Entry points, symbols, dependency map and inventory",
+      "signals": [
+        "repository map",
+        "symbols",
+        "entry points"
+      ],
+      "guide": "references/modules/codeman-repository-mapper/module-guide.md"
+    },
+    {
+      "name": "codeman-research",
+      "description": "Grounded technical research and verification",
+      "signals": [
+        "compare libraries",
+        "research",
+        "specification"
+      ],
+      "guide": "references/modules/codeman-research/module-guide.md"
+    },
+    {
+      "name": "codeman-reverse",
+      "description": "Static/binary analysis and reversing",
+      "signals": [
+        "reverse engineering",
+        "assembly",
+        "ghidra",
+        "binary"
+      ],
+      "guide": "references/modules/codeman-reverse/module-guide.md"
+    },
+    {
+      "name": "codeman-security",
+      "description": "Secure code review and vulnerability assessments",
+      "signals": [
+        "security",
+        "sast",
+        "dast",
+        "vulnerability"
+      ],
+      "guide": "references/modules/codeman-security/module-guide.md"
+    },
+    {
+      "name": "codeman-supply-chain",
+      "description": "SBOMs, dependencies, software supply-chain risk",
+      "signals": [
+        "sbom",
+        "software supply chain",
+        "provenance"
+      ],
+      "guide": "references/modules/codeman-supply-chain/module-guide.md"
+    },
+    {
+      "name": "codeman-tester",
+      "description": "Unit, integration, regression and property testing",
+      "signals": [
+        "test",
+        "unit test",
+        "regression test",
+        "integration test"
+      ],
+      "guide": "references/modules/codeman-tester/module-guide.md"
+    },
+    {
+      "name": "codeman-ui-ux",
+      "description": "UI, accessibility and responsive integration",
+      "signals": [
+        "ui",
+        "ux",
+        "accessibility",
+        "responsive"
+      ],
+      "guide": "references/modules/codeman-ui-ux/module-guide.md"
+    },
+    {
+      "name": "codeman-web",
+      "description": "Web and backend frameworks",
+      "signals": [
+        "react",
+        "next.js",
+        "fastapi",
+        "flask",
+        "frontend",
+        "node"
+      ],
+      "guide": "references/modules/codeman-web/module-guide.md"
+    }
+  ]
+}
