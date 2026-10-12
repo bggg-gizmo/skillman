@@ -18,15 +18,17 @@ The source of truth is under `skills/<skill-name>/`. Each ZIP in `upload-zips/` 
 
 **Source directory**: In an agent runtime that supports local skills, copy one or more complete folders from `skills/` to the runtime's documented skill installation directory. Never flatten a folder or separate `SKILL.md` from its references.
 
-## 3. Install in ChatGPT or another compatible host
+## 3. Install on ChatGPT, Claude, Codex, and other agents
 
-1. Download the selected standalone ZIP under `upload-zips/`. Do not select `bundles/` for single-skill upload.
-2. Open the host's Skills manager and choose Create/Upload (wording and availability vary by client and account).
-3. Select the ZIP. Confirm the skill name, description, and visibility. If updating an existing skill, follow the host's update workflow.
-4. Ask the assistant to use the skill by name and provide the relevant project files or authorized connector links.
-5. Confirm the result from the actual tests and artifacts, not just a claim that a skill was activated.
+Read the **[cross-agent installation guide](docs/INSTALLATION.md)** for verified instructions, official vendor sources, Windows PowerShell examples, skill discovery paths, invocation syntax, and troubleshooting. Supported documented hosts include ChatGPT, Claude.ai web, Claude Code, OpenAI Codex, Gemini CLI, Cursor, GitHub Copilot, and OpenCode.
 
-Examples: `Use Codeman Guardian and Codeman Tester to implement a change with regression checks.` Or `Use Codemaster to inspect, implement, integrate and verify this application update without removing any existing function.`
+**ChatGPT (eligible accounts):** Open **Plugins → Skills → Create → Upload from your computer** and upload the single [Codemaster ZIP](upload-zips/codemaster.zip), or an individual skill ZIP. Complete the upload review before use. **`@Template Creator` is for reusable document/presentation/artifact templates, not for installing these already packaged coding skills.** A ZIP attached in a normal chat is not a persistent installation.
+
+**Claude.ai web:** Open **Customize → Skills → + → Create skill → Upload a skill**, upload the same standalone skill ZIP, and enable it. Availability depends on plan and code-execution settings.
+
+**Local coding agents:** Copy a complete skill folder from `skills/` into your agent's documented discovery path, rather than uploading a ZIP. Common paths are `.claude/skills/` (Claude Code), `.agents/skills/` (Codex and multiple other agents), `.gemini/skills/` (Gemini CLI), `.cursor/skills/` (Cursor), `.github/skills/` (Copilot), and `.opencode/skills/` (OpenCode). Keep the `SKILL.md` together with its `references/`, then reload or restart the agent as documented.
+
+In a new session, request: **Use Codemaster to inspect this application, preserve every existing feature, implement the requested changes completely, and report all integration and regression tests actually run.** Instructions never grant tools, credentials, or hosted compute automatically.
 
 ## 4. How Codemaster coordinates all modules
 
@@ -69,6 +71,7 @@ A skill is an instruction layer, not an automatic guarantee: unavailable tools, 
 - `bundles/README.md` — collection-bundle instructions
 - `bundles/skillman-all-public-skills.zip` — one offline bundle containing all public skill sources and individual archives
 - `docs/CATALOG.md` — complete directory of skills and their responsibilities
+- `docs/INSTALLATION.md` — multi-agent installation instructions and links to official vendor documentation
 - `docs/CONFIGURATION.md` — optional peer-local settings
 - `docs/PUBLISHING.md` — publication workflow and credit safeguards
 - `docs/CONTRIBUTING.md` — public contribution standards
@@ -116,7 +119,7 @@ The builder assembles **41 ZIPs and one combined bundle** deterministically from
 
 **Background Gremlin Group — Creating Unique Tools for Unique Individuals.**
 
-Attribution is required in the root README and this manual for this distribution. An explicit software license is not included here; the repository owner should choose the appropriate license before setting terms for downstream redistribution. This manual does not grant additional rights by itself.
+Attribution is required in the root README and this manual for this distribution. This repository is licensed under the [MIT License](LICENSE). Preserve its copyright and permission notice in copies or substantial portions. This manual does not add terms beyond that license.
 
 ## 13. Evaluation, routing, and release status
 
